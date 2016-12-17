@@ -1,0 +1,9 @@
+#cont {
+  margin: auto;
+  margin-top: 150px;
+  width: 800px;
+  /*border: 1px solid black;*/
+}
+#btn {
+  padding-left: 5px;
+}

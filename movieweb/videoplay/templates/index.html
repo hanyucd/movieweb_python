@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>小宇视频</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, height=divice-height, inital-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  {% load staticfiles %}
+  <link type="text/css" rel="stylesheet" href="{% static 'home_page.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div id="user">
+      {% if error %}
+        <p class="text-danger">☹ 欧漏。你还未登录 or 用户名存储已过期，可重新<a href="/">登录</a> ……</p>
+      {% else %}
+        <p class="text-primary">☺ 登录成功。欢迎用户 {{ username }}，来到小宇视频 ……</p>
+      {% endif %}
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+      	<!-- 轮播（Carousel）指标 -->
+      	<ol class="carousel-indicators">
+      		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      		<li data-target="#myCarousel" data-slide-to="1"></li>
+      		<li data-target="#myCarousel" data-slide-to="2"></li>
+      		<li data-target="#myCarousel" data-slide-to="3"></li>
+      	</ol>
+      	<!-- 轮播（Carousel）项目 -->
+      	<div class="carousel-inner">
+          <div class="item active">
+      			<a href="video_11.html" target="_blank"><img src="{% static 'images/BingHeShiDai4.jpg' %}" alt="冰河时代4" /></a>
+      		</div>
+      		<div class="item">
+      			<a href="video_12.html" target="_blank"><img src="{% static 'images/GongFuXiongMao3.jpg' %}" alt="功夫熊猫3" /></a>
+      		</div>
+      		<div class="item">
+      			<a href="video_13.html" target="_blank"><img src="{% static 'images/XianXiaXueXuan.jpg' %}" alt="仙侠学院" /></a>
+      		</div>
+          <div class="item">
+            <a href="video_14.html" target="_blank"><img src="{% static 'images/CiWeiXiaoZi.jpg' %}" alt="刺猬小子" /></a>
+          </div>
+      	</div>
+      	<!-- 轮播（Carousel）导航 -->
+      	<a class="carousel-control left" href="#myCarousel"
+      	   data-slide="prev">&lsaquo;</a>
+      	<a class="carousel-control right" href="#myCarousel"
+      	   data-slide="next">&rsaquo;</a>
+     </div>
+
+    <div>
+      <hr />
+      <ul class="nav nav-tabs nav-justified" id="index">
+        <li class="active"><a href="#tab0" data-toggle="tab">动作</a></li>
+        <li><a href="#tab1" data-toggle="tab">冒险</a></li>
+        <li><a href="#tab2" data-toggle="tab">喜剧</a></li>
+        <li><a href="#tab3" data-toggle="tab">动画</a></li>
+        <li><a href="#tab4" data-toggle="tab">科幻</a></li>
+        <li><a href="#tab5" data-toggle="tab">犯罪</a></li>
+        <li><a href="#tab6" data-toggle="tab">爱情</a></li>
+        <li><a href="#tab7" data-toggle="tab">武侠</a></li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="my-content">
+      <div class="tab-pane fade in active" id="tab0">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/01.jpg' %}" alt="澳门风云3">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="澳门风云3">澳门风云3</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/02.jpg' %}" alt="唐人街探案">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="唐人街探案">唐人街探案</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/03.jpg' %}" alt="鬼吹灯之寻龙诀">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="鬼吹灯之寻龙诀">鬼吹灯之寻龙诀</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/04.jpg' %}" alt="魔卡行动">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_4.html" target="_blank" title="魔卡行动">魔卡行动</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/05.jpg' %}" alt="猛龙特囧">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="猛龙特囧">猛龙特囧</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/06.jpg' %}" alt="解救吾先生">
+            </a>
+            <image class="new_image" src="{% static 'images/new-blue.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="解救吾先生">解救吾先生</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/07.jpg' %}" alt="西游记之大圣归来">
+            </a>
+            <image class="new_image" src="{% static 'images/hot-yellow.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="西游记之大圣归来">西游记之大圣归来</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_8.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/08.jpg' %}" alt="九层妖塔">
+            </a>
+            <image class="new_image" src="{% static 'images/new-blue.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_8.html" target="_blank" title="九层妖塔">九层妖塔</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/09.jpg' %}" alt="道士下山">
+            </a>
+            <image class="new_image" src="{% static 'images/hot-yellow.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_9.html" target="_blank" title="道士下山">道士下山</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/10.jpg' %}" alt="杀破狼2">
+            </a>
+            <image class="new_image" src="{% static 'images/hot-yellow.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_10.html" target="_blank" title="杀破狼2">杀破狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/11.jpg' %}" alt="一万年以后">
+            </a>
+            <image class="new_image" src="{% static 'images/new-blue.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_11.html" target="_blank" title="一万年以后">一万年以后</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Action/12.jpg' %}" alt="饥饿游戏3：嘲笑鸟(上)">
+            </a>
+            <image class="new_image" src="{% static 'images/new-blue.gif' %}"/>
+            <strong class="figure_title">
+              <a _boss="film" href="video_12.html" target="_blank" title="饥饿游戏3：嘲笑鸟(上)">饥饿游戏3：嘲笑鸟(上)</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Action/13.jpg' %}" alt="神探驾到">
+    				</a>
+            <image class="new_image" src="{% static 'images/new-blue.gif' %}"/>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_13.html" target="_blank" title="神探驾到">神探驾到</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Action/14.jpg' %}" alt="钟馗伏魔：雪妖魔灵">
+    				</a>
+            <image class="new_image" src="{% static 'images/hot-yellow.gif' %}"/>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_14.html" target="_blank" title="钟馗伏魔：雪妖魔灵">钟馗伏魔：雪妖魔灵</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Action/15.jpg' %}" alt="一个人的武林">
+    				</a>
+            <image class="new_image" src="{% static 'images/hot-yellow.gif' %}"/>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_15.html" target="_blank" title="一个人的武林">一个人的武林</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_16.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Action/16.jpg' %}" alt="富春山居图">
+    				</a>
+            <image class="new_image" src="{% static 'images/hot-yellow.gif' %}"/>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_16.html" target="_blank" title="富春山居图">富春山居图</a>
+    				</strong>
+			    </li>
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab1">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/01.jpg' %}" alt="星球大战：原力觉醒">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="星球大战：原力觉醒">星球大战：原力觉醒</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/02.jpg' %}" alt="一个勺子">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_2.html" target="_blank" title="一个勺子">一个勺子</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/03.jpg' %}" alt="狂野飞车">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_3.html" target="_blank" title="狂野飞车">狂野飞车</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/04.jpg' %}" alt="白幽灵传奇之绝命逃亡">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_4.html" target="_blank" title="白幽灵传奇之绝命逃亡">白幽灵传奇之绝命逃亡</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/05.jpg' %}" alt="我是谁2015">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_5.html" target="_blank" title="我是谁2015">我是谁2015</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/06.jpg' %}" alt="智取威虎山">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_6.html" target="_blank" title="智取威虎山">智取威虎山</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/07.jpg' %}" alt="末日浩劫">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_7.html" target="_blank" title="末日浩劫">末日浩劫</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_8.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/08.jpg' %}" alt="分歧者：异类觉醒">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_8.html" target="_blank" title="分歧者：异类觉醒">分歧者：异类觉醒</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/09.jpg' %}" alt="神通佛影">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_9.html" target="_blank" title="神通佛影">神通佛影</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/10.jpg' %}" alt="庞贝末日">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_10.html" target="_blank" title="庞贝末日">庞贝末日</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Adventure/11.jpg' %}" alt="横冲直撞好莱坞">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_11.html" target="_blank" title="横冲直撞好莱坞">横冲直撞好莱坞</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/12.jpg' %}" alt="神通佛影">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_12.html" target="_blank" title="神通佛影">神通佛影</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/13.jpg' %}" alt="庞贝末日">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_13.html" target="_blank" title="庞贝末日">庞贝末日</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/14.jpg' %}" alt="横冲直撞好莱坞">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_14.html" target="_blank" title="横冲直撞好莱坞">横冲直撞好莱坞</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/15.jpg' %}" alt="美人鱼">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_15.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/16.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/17.jpg' %}" alt="哥斯拉">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/18.jpg' %}" alt="美国队长2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_4.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/19.jpg' %}" alt="金刚狼2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="金刚狼2">金刚狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/20.jpg' %}" alt="恶魔蜘蛛王">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Adventure/21.jpg' %}" alt="永不失败的国家">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+            </strong>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab2">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Comedy/01.jpg' %}" alt="超能太监">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_1.html" target="_blank" title="超能太监">超能太监</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Comedy/02.jpg' %}" alt="致我们终将到来的爱情">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_2.html" target="_blank" title="致我们终将到来的爱情">致我们终将到来的爱情</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Comedy/03.jpg' %}" alt="一念天堂">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_3.html" target="_blank" title="一念天堂">一念天堂</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Comedy/04.jpg' %}" alt="浪漫天降">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_4.html" target="_blank" title="浪漫天降">浪漫天降</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Comedy/05.jpg' %}" alt="恶棍天使">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_5.html" target="_blank" title="恶棍天使">恶棍天使</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Comedy/06.jpg' %}" alt="万万没想到">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_6.html" target="_blank" title="万万没想到">万万没想到</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/07.jpg' %}" alt="美人鱼">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/08.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/09.jpg' %}" alt="哥斯拉">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_10.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/10.jpg' %}" alt="美国队长2">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_9.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/11.jpg' %}" alt="金刚狼2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="金刚狼2">金刚狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/12.jpg' %}" alt="恶魔蜘蛛王">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/13.jpg' %}" alt="永不失败的国家">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/14.jpg' %}" alt="美人鱼">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/15.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_11.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/16.jpg' %}" alt="哥斯拉">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_13.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Comedy/17.jpg' %}" alt="美国队长2">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_14.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab3">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/01.jpg' %}" alt="阿里巴巴2所罗门封印">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_11.html" target="_blank" title="阿里巴巴2所罗门封印">阿里巴巴2所罗门封印</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/02.jpg' %}" alt="乐高史酷比：闹鬼的好莱坞">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_12.html" target="_blank" title="乐高史酷比：闹鬼的好莱坞">乐高史酷比：闹鬼的好莱坞</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/03.jpg' %}" alt="疯狂动物城">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_13.html" target="_blank" title="疯狂动物城">疯狂动物城</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/04.jpg' %}" alt="功夫熊猫3">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_4.html" target="_blank" title="功夫熊猫3">功夫熊猫3</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/05.jpg' %}" alt="青蛙王国之冰冻大冒险">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_15.html" target="_blank" title="青蛙王国之冰冻大冒险">青蛙王国之冰冻大冒险</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/06.jpg' %}" alt="丛林大反攻4:吓傻了">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_1.html" target="_blank" title="丛林大反攻4:吓傻了">丛林大反攻4:吓傻了</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/07.jpg' %}" alt="果宝特攻之水果大逃亡">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_2.html" target="_blank" title="果宝特攻之水果大逃亡">果宝特攻之水果大逃亡</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/08.jpg' %}" alt="年兽大作战">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_3.html" target="_blank" title="年兽大作战">年兽大作战</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/09.jpg' %}" alt="熊出没之熊心归来">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_9.html" target="_blank" title="熊出没之熊心归来">熊出没之熊心归来</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/10.jpg' %}" alt="小门神">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_10.html" target="_blank" title="小门神">小门神</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/11.jpg' %}" alt="夺旗">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_11.html" target="_blank" title="夺旗">夺旗</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/12.jpg' %}" alt="小王子">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_12.html" target="_blank" title="小王子">小王子</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/13.jpg' %}" alt="极地大反攻">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_13.html" target="_blank" title="极地大反攻">极地大反攻</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/14.jpg' %}" alt="咕噜咕噜美人鱼">
+    					<span></span>
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_14.html" target="_blank" title="咕噜咕噜美人鱼">咕噜咕噜美人鱼</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/15.jpg' %}" alt="海绵宝宝">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_15.html" target="_blank" title="海绵宝宝">海绵宝宝</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Cartoon/16.jpg' %}" alt="洛克王国4:出发！巨人谷">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_1.html" target="_blank" title="洛克王国4:出发！巨人谷">洛克王国4:出发！巨人谷</a>
+    				</strong>
+			    </li>
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab4">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/01.jpg' %}" alt="美人鱼">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_1.html" target="_blank" title="美人鱼">美人鱼</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/02.jpg' %}" alt="复仇者联盟2：奥创纪元">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_12.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/03.jpg' %}" alt="哥斯拉">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_13.html" target="_blank" title="哥斯拉">哥斯拉</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/04.jpg' %}" alt="美国队长2">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_14.html" target="_blank" title="美国队长2">美国队长2</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/05.jpg' %}" alt="金刚狼2">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_5.html" target="_blank" title="金刚狼2">金刚狼2</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/06.jpg' %}" alt="恶魔蜘蛛王">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/07.jpg' %}" alt="永不失败的国家">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_8.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/08.jpg' %}" alt="复仇者联盟">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_8.html" target="_blank" title="复仇者联盟">复仇者联盟</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/09.jpg' %}" alt="极盗者">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_9.html" target="_blank" title="极盗者">极盗者</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/10.jpg' %}" alt="蚁人">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_10.html" target="_blank" title="蚁人">蚁人</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/11.jpg' %}" alt="终结者：创世纪">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_1.html" target="_blank" title="终结者：创世纪">终结者：创世纪</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/12.jpg' %}" alt="猴子王国">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_2.html" target="_blank" title="猴子王国">猴子王国</a>
+    				</strong>
+			      </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/13.jpg' %}" alt="明星伙伴电影版">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_3.html" target="_blank" title="明星伙伴电影版">明星伙伴电影版</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/14.jpg' %}" alt="港囧">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_14.html" target="_blank" title="港囧">港囧</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/15.jpg' %}" alt="夏洛特烦恼">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_15.html" target="_blank" title="夏洛特烦恼">夏洛特烦恼</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_16.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Science/16.jpg' %}" alt="华丽上班族">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_16.html" target="_blank" title="华丽上班族">华丽上班族</a>
+    				</strong>
+			    </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab5">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/01.jpg' %}" alt="一万年以后">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_11.html" target="_blank" title="一万年以后">一万年以后</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/02.jpg' %}" alt="饥饿游戏3：嘲笑鸟(上)">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_12.html" target="_blank" title="饥饿游戏3：嘲笑鸟(上)">饥饿游戏3：嘲笑鸟(上)</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/03.jpg' %}" alt="神探驾到">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_13.html" target="_blank" title="神探驾到">神探驾到</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/04.jpg' %}" alt="钟馗伏魔：雪妖魔灵">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_14.html" target="_blank" title="钟馗伏魔：雪妖魔灵">钟馗伏魔：雪妖魔灵</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/05.jpg' %}" alt="一个人的武林">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_15.html" target="_blank" title="一个人的武林">一个人的武林</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/06.jpg' %}" alt="富春山居图">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_1.html" target="_blank" title="富春山居图">富春山居图</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/07.jpg' %}" alt="末日浩劫">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_2.html" target="_blank" title="末日浩劫">末日浩劫</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/08.jpg' %}" alt="分歧者：异类觉醒">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_3.html" target="_blank" title="分歧者：异类觉醒">分歧者：异类觉醒</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/09.jpg' %}" alt="神通佛影">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_4.html" target="_blank" title="神通佛影">神通佛影</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/10.jpg' %}" alt="庞贝末日">
+    				</a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_5.html" target="_blank" title="庞贝末日">庞贝末日</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+    				<a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+    					<img src="{% static 'images/Crime/11.jpg' %}" alt="横冲直撞好莱坞">
+    				</a>
+    				<strong class="figure_title">
+    					<a _boss="film" href="video_11.html" target="_blank" title="横冲直撞好莱坞">横冲直撞好莱坞</a>
+    				</strong>
+			    </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/12.jpg' %}" alt="美人鱼">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/13.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/14.jpg' %}" alt="哥斯拉">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_13.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/15.jpg' %}" alt="美国队长2">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_14.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/16.jpg' %}" alt="金刚狼2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="金刚狼2">金刚狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/17.jpg' %}" alt="恶魔蜘蛛王">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Crime/18.jpg' %}" alt="永不失败的国家">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+            </strong>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab6">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/01.jpg' %}" alt="阿里巴巴2所罗门封印">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="阿里巴巴2所罗门封印">阿里巴巴2所罗门封印</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/02.jpg' %}" alt="乐高史酷比：闹鬼的好莱坞">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="乐高史酷比：闹鬼的好莱坞">乐高史酷比：闹鬼的好莱坞</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/03.jpg' %}" alt="疯狂动物城">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="疯狂动物城">疯狂动物城</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/04.jpg' %}" alt="功夫熊猫3">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_4.html" target="_blank" title="功夫熊猫3">功夫熊猫3</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/05.jpg' %}" alt="青蛙王国之冰冻大冒险">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="青蛙王国之冰冻大冒险">青蛙王国之冰冻大冒险</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/06.jpg' %}" alt="丛林大反攻4:吓傻了">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="丛林大反攻4:吓傻了">丛林大反攻4:吓傻了</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/07.jpg' %}" alt="果宝特攻之水果大逃亡">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="果宝特攻之水果大逃亡">果宝特攻之水果大逃亡</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_8.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/08.jpg' %}" alt="年兽大作战">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_8.html" target="_blank" title="年兽大作战">年兽大作战</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/09.jpg' %}" alt="熊出没之熊心归来">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_9.html" target="_blank" title="熊出没之熊心归来">熊出没之熊心归来</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/10.jpg' %}" alt="小门神">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_10.html" target="_blank" title="小门神">小门神</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/11.jpg' %}" alt="夺旗">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_11.html" target="_blank" title="夺旗">夺旗</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/12.jpg' %}" alt="小王子">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_12.html" target="_blank" title="小王子">小王子</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_13.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/13.jpg' %}" alt="极地大反攻">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_13.html" target="_blank" title="极地大反攻">极地大反攻</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_14.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/14.jpg' %}" alt="咕噜咕噜美人鱼">
+              <span></span>
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_14.html" target="_blank" title="咕噜咕噜美人鱼">咕噜咕噜美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/15.jpg' %}" alt="神通佛影">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_9.html" target="_blank" title="神通佛影">神通佛影</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/16.jpg' %}" alt="庞贝末日">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_10.html" target="_blank" title="庞贝末日">庞贝末日</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_16.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/17.jpg' %}" alt="横冲直撞好莱坞">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_16.html" target="_blank" title="横冲直撞好莱坞">横冲直撞好莱坞</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/18.jpg' %}" alt="美人鱼">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_11.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/19.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_12.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/20.jpg' %}" alt="哥斯拉">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/21.jpg' %}" alt="美国队长2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_4.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/22.jpg' %}" alt="金刚狼2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="金刚狼2">金刚狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/23.jpg' %}" alt="恶魔蜘蛛王">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Love/24.jpg' %}" alt="永不失败的国家">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+            </strong>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="tab7">
+        <ul class="figures_lists">
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/01.jpg' %}" alt="神通佛影">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_9.html" target="_blank" title="神通佛影">神通佛影</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_10.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/02.jpg' %}" alt="庞贝末日">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_10.html" target="_blank" title="庞贝末日">庞贝末日</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_11.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/03.jpg' %}" alt="横冲直撞好莱坞">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_11.html" target="_blank" title="横冲直撞好莱坞">横冲直撞好莱坞</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/04.jpg' %}" alt="美人鱼">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/05.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/06.jpg' %}" alt="哥斯拉">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/07.jpg' %}" alt="美国队长2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_4.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_5.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/08.jpg' %}" alt="金刚狼2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_5.html" target="_blank" title="金刚狼2">金刚狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/09.jpg' %}" alt="恶魔蜘蛛王">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/10.jpg' %}" alt="永不失败的国家">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_1.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/11.jpg' %}" alt="美人鱼">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_1.html" target="_blank" title="美人鱼">美人鱼</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/12.jpg' %}" alt="复仇者联盟2：奥创纪元">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="复仇者联盟2：奥创纪元">复仇者联盟2：奥创纪元</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/13.jpg' %}" alt="哥斯拉">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="哥斯拉">哥斯拉</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_4.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/14.jpg' %}" alt="美国队长2">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_4.html" target="_blank" title="美国队长2">美国队长2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_15.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/15.jpg' %}" alt="金刚狼2">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_15.html" target="_blank" title="金刚狼2">金刚狼2</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_6.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/16.jpg' %}" alt="恶魔蜘蛛王">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_6.html" target="_blank" title="恶魔蜘蛛王">恶魔蜘蛛王</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_7.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/17.jpg' %}" alt="永不失败的国家">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_7.html" target="_blank" title="永不失败的国家">永不失败的国家</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_8.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/18.jpg' %}" alt="复仇者联盟">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_8.html" target="_blank" title="复仇者联盟">复仇者联盟</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_9.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/19.jpg' %}" alt="极盗者">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_9.html" target="_blank" title="极盗者">极盗者</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_2.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/20.jpg' %}" alt="蚁人">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_2.html" target="_blank" title="蚁人">蚁人</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_3.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/21.jpg' %}" alt="终结者：创世纪">
+            </a>
+            <div class="label_title">
+              <span class="label_font">VIP影片</span>
+            </div>
+            <strong class="figure_title">
+              <a _boss="film" href="video_3.html" target="_blank" title="终结者：创世纪">终结者：创世纪</a>
+            </strong>
+          </li>
+
+          <li class="list_item" data-trigger-class="list_item_hover">
+            <a _boss="film" href="video_12.html" target="_blank" class="figure" tabindex="-1">
+              <img src="{% static 'images/Swordsman/22.jpg' %}" alt="猴子王国">
+            </a>
+            <strong class="figure_title">
+              <a _boss="film" href="video_12.html" target="_blank" title="猴子王国">猴子王国</a>
+            </strong>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

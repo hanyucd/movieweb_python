@@ -1,0 +1,28 @@
+div.container{
+  margin-top: 50px;
+}
+.my_font {
+  font-size: 20px;
+  font-weight: bolder;
+}
+#all_comment {
+  margin-top: 15px;
+  border-bottom: 1px solid #87CEFA;
+}
+.single_comment {
+  min-height: 100px;
+  display: flex;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.username {
+  min-width: 100px;
+  margin: auto 0;
+}
+.contents {
+  padding: 15px;
+  min-width: 600px;
+}
+.comment_time {
+  margin: auto 0;
+}

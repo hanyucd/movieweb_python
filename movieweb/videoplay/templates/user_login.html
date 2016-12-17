@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>视频登录界面</title>
+  <meta charset="UTF-8"/>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'user_login.css' %}">
+</head>
+<body>
+  <div id="cont">
+    {% if userName_error %}
+      <p class="bg-danger text-danger">没有该用户名 或 用户名错误，请注册 ...</p>
+    {% endif %}
+
+    {% if userPassword_error %}
+      <p class="bg-danger text-danger">密码错误，请重新输入 ...</p>
+    {% endif %}
+
+    {% if userForm_error %}
+      <p class="bg-danger text-danger">输入的数据为空 或 输入的数据不合法 ...</p>
+    {% endif %}
+    <form role="form" method="post">
+      <div class="form-group">
+        <label for="user">用户名</label>
+        <input type="text" name="username" class="form-control" id="user" placeholder="请输入用户名 ..." />
+      </div>
+      <div class="form-group">
+        <label for="password">密码</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码 ..."/>
+      </div>
+      <a href="/regist/">还没账号，立即注册</a>
+      <button type="submit" class="btn btn-primary">登录</button>
+      <!-- <button type="reset" class="btn btn-primary my_btn">重置</button> -->
+    </form>
+  </div>
+</body>
+</html>

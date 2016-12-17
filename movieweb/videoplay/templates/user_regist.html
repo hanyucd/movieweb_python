@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>用户注册界面</title>
+  <meta charset="UTF-8"/>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'user_regist.css' %}"/>
+</head>
+<body>
+  <div id="cont">
+    {% if danger %}
+      <div class="alert alert-danger" alert-dismissible role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <p>输入的数据为空 或 输入的数据不合法，请重新输入 ...</p>
+      </div>
+    {% endif %}
+    <h3>用户注册</h3>
+    <hr />
+    <form class="form-horizontal" role='form' method="post">
+      <div class="form-group">
+        <label for="input_user" class="col-sm-2 control-label">请输入用户名：</label>
+        <div class="col-sm-10">
+          <input type="text" name="username" class="form-control" id="input_user" placeholder="请输入字母 ..."/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="input_password" class="col-sm-2 control-label">请输入密码：</label>
+        <div class="col-sm-10">
+          <input type="password" name="password" class="form-control" id="input_password" placeholder="请输入数字 ..."/>
+        </div>
+      </div>
+      <div class="from-group">
+        <div class="col-sm-offset-2" id="btn">
+          <button type="submit" class="btn btn-success">注册</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
