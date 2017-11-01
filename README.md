@@ -14,14 +14,22 @@ python用于程序后台逻辑处理
 
 用户名：root      密码：root
 
---------------------------
-## 网站展示：
+
+## 项目展示：
 __[视频网站（部分内容）](http://oojestrjh.bkt.clouddn.com/movieweb/index.html)__
 
-* __首页:__
+> PC 端
+
+ __首页:__
 
 ![网站首页](./image/movie_1.jpg "首页")
 
-* __播放页面:__
+ __播放页面:__
 
 ![网站播放页面](./image/movie_2.jpg "播放页面")
+
+> 移动端
+
+![移动端效果](./image/mobile.jpg "移动端效果")
+
+© Movie website. Developer by [hanyu](https://github.com/hanyucd).
