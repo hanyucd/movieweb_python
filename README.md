@@ -15,36 +15,36 @@ python 用于程序后台逻辑处理
 用户名：root      密码：root
 
 
-> 项目环境相关依赖：
+## 项目环境相关依赖：
 
 Django 安装：
 ```bash
-$ pip install Django==1.8.13
+> $ pip install Django==1.8.13
 
 ```
 
 Django REST framework 安装：
 ```bash
-$ pip install djangorestframework
+> $ pip install djangorestframework
 
 ```
 
 Django REST Swagger 安装：
 ```bash
-$ pip install django-rest-swagger
+> $ pip install django-rest-swagger
 
 ```
 
 Requests 安装：
 ```bash
-$ pip install requests
+> $ pip install requests
 
 ```
 
-> 项目运行：
+## 项目运行：
 
 ```bash
-$ python manage.py runserver 端口
+> $ python manage.py runserver 端口
 
 ```
 
