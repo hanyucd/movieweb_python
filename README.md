@@ -17,17 +17,36 @@ python 用于程序后台逻辑处理
 
 > 项目环境相关依赖：
 
-Django 安装：pip install Django==1.8.13
+Django 安装：
+```bash
+$ pip install Django==1.8.13
 
-Django REST framework 安装：pip install djangorestframework
+```
 
-Django REST Swagger 安装：pip install django-rest-swagger
+Django REST framework 安装：
+```bash
+$ pip install djangorestframework
 
-Requests 安装：pip install requests
+```
+
+Django REST Swagger 安装：
+```bash
+$ pip install django-rest-swagger
+
+```
+
+Requests 安装：
+```bash
+$ pip install requests
+
+```
 
 > 项目运行：
 
-python manage.py runserver 端口
+```bash
+$ python manage.py runserver 端口
+
+```
 
 
 ## 项目展示：
